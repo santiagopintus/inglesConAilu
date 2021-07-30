@@ -1,0 +1,22 @@
+
+/*Estilos globales generales*/
+@import 'globales/variables';
+@import 'globales/utilidades';
+@import 'globales/globales';
+@import 'globales/animaciones';
+
+/*Layout general*/
+@import 'layout/navegacion';
+@import 'layout/heros';
+@import 'layout/footer';
+@import 'layout/barraScroll';
+
+/*Páginas*/
+@import 'pages/inicio';
+@import 'pages/materiales';
+@import 'pages/contacto';
+@import 'pages/servicios';
+@import 'pages/sobreMi';
+@import 'pages/error404';
+
+

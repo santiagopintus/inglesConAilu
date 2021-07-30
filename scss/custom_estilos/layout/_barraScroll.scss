@@ -1,0 +1,21 @@
+body {
+    // el elemento que envuelve al conjunto
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+    // la barra en sí misma
+    &::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem -2px rgba($negro, .7);
+        background-color: $secondary;
+
+        &:hover {
+            box-shadow: 0 0 1rem -1px rgba($negro, .9);
+        }
+    }
+
+    // el carril de la barra 
+    &::-webkit-scrollbar-track {
+        background-color: rgba($negro, .1);
+    }
+}

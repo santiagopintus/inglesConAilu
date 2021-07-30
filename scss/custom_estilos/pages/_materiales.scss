@@ -1,0 +1,46 @@
+/* PAGINA MATERIALES */
+/*Carousel*/
+.carousel-item .image-container {
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    filter: brightness(.7);
+}
+
+$material-bg-url: (
+    material1: "../img/optimized/material1.webp",
+    material2: "../img/optimized/material2.webp",
+    material3: "../img/optimized/material3.webp"
+); 
+
+@each $material, $url in $material-bg-url {
+    .image-#{$material} {
+        background-image: url($url);
+    }
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    font-weight: 700;
+    color: $blanco;
+}
+
+.carousel-caption .btn-terciario {
+    margin: 0;
+    padding: .8rem 1.2rem;
+}
+
+@media only screen and (min-width: $sm) {
+    .carousel-caption .btn-terciario {
+        width: 100%;
+        padding: .8rem 1.2rem;
+    }
+}
+
+@media only screen and (min-width: $md) {
+    .carousel-caption .btn-terciario {
+        width: fit-content;
+        margin: 0 0 0 auto;
+        padding: .8rem 1.2rem;
+    }
+}

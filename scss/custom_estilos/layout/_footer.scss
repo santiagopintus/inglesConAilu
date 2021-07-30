@@ -1,0 +1,39 @@
+/*FOOTER*/
+footer {
+
+    .navbar {
+        .navbar-nav__item {
+            .navbar-nav__link {
+                @extend .fs-8;
+            }
+
+        }
+    }
+    .copyright {
+        @extend .fs-8;
+    }
+    .logo-footer {
+        max-width: 6.9rem;
+    }
+}
+
+
+
+.contenedor-sociales ul li {
+    list-style: none;
+}
+
+.contenedor-sociales .icono-social {
+    width: 2.6rem;
+}
+
+.copyright {
+    font-weight: 300;
+    text-align: center;
+    color: $blanco;
+}
+
+.copyright a {
+    font-weight: 700;
+    color: var(--secondary);
+}

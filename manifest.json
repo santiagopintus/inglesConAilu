@@ -1,0 +1,57 @@
+{
+  "short_name": "InglesConAilu",
+  "name": "Inglés con Ailu: Clases de inglés",
+  "icons": [
+    {
+      "src": "assets/img/ios-icon192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/icon512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1d3557",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#1d3557",
+  "shortcuts": [
+    {
+      "name": "Materiales",
+      "short_name": "Materiales",
+      "description": "Descarga materiales de estudio",
+      "url": "pages/materiales.html",
+      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contacto",
+      "short_name": "Contacto",
+      "description": "Contacta a la profesora de inglés!",
+      "url": "pages/contacto.html",
+      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Clases de inglés en vivo!",
+  "screenshots": [
+    {
+      "src": "assets/img/screenshots/home.jpg",
+      "type": "image/jpeg",
+      "sizes": "1024x576"
+    },
+    {
+      "src": "assets/img/screenshots/servicios.jpg",
+      "type": "image/jpeg",
+      "sizes": "1024x576"
+    },
+    {
+      "src": "assets/img/screenshots/contacto.jpg",
+      "type": "image/jpeg",
+      "sizes": "1024x576"
+    }
+  ]
+}

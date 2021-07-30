@@ -1,0 +1,86 @@
+/* INICIO */
+/*Título*/
+.titulo {
+    max-width: fit-content;
+    margin-bottom: 15rem;
+}
+
+.titulo a {
+    text-decoration: none;
+}
+
+.titulo h1,
+.titulo h2 {
+    color: $blanco;
+}
+
+.titulo h1 {
+    font-weight: 700;
+    padding: 1.6rem 0;
+}
+
+.titulo h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+}
+
+/*ICONO DE SCROLL clickeable*/
+.scroll-icon {
+    width: 100%;
+    height: 6rem;
+    margin-top: 5rem;
+    bottom: 0;
+    text-align: center;
+    display: none;
+
+    .scroll-icon__mouse {
+        display: block;
+        margin: 0 auto;
+        height: 5.3rem;
+        width: 2.7rem;
+        border: 2px solid $blanco;
+        border-radius: 2rem;
+    }
+    .scroll-icon__ruedita {
+        margin: 1rem auto;
+        width: .5rem;
+        height: .5rem;
+        border-radius: 2rem;
+        background-color: $blanco;
+        animation: ruedita 1.5s 0s ease infinite;
+    }
+
+} //Cierre scroll-icon
+
+
+.contenido-inicio {
+    margin: 5rem 0 8rem 0;
+
+    &__titulo--primario {
+        @extend .seccion__titulo--primario;
+    }
+    &__titulo--secundario {
+        @extend .seccion__titulo--secundario;
+    }
+}
+
+.contenido-inicio .texto-inicio {
+    margin: 3rem 0;
+}
+
+/*Titulo mq */
+@media only screen and (min-width: $sm) {
+    .titulo {
+        margin-bottom: 10rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .scroll-icon {
+        display: block;
+    }
+    .titulo {
+        margin-bottom: 18rem;
+    }
+}

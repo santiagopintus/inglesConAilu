@@ -1,0 +1,34 @@
+/*GLOBALES*/
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    @extend .fs-6;
+}
+
+* {
+    font-family: $font-family-sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: $primary;
+}
+
+p {
+    line-height: 2;
+}

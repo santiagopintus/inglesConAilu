@@ -1,0 +1,81 @@
+/*HERO*/
+
+.jumbotron {
+    min-height: 100vh;
+    border-radius: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron-page {
+    @extend .jumbotron;
+    max-height: 29rem;
+    min-height: 0;
+    margin-top: 6rem;
+}
+
+$jumbotron-urls: (
+    index: "../img/optimized/inicio_overlay.webp",
+    contacto: "../img/optimized/contacto_overlay.webp",
+    materiales: "../img/optimized/materiales.webp",
+    servicios: "../img/optimized/servicios.webp",
+    sobre-mi: "../img/optimized/sobre_mi.webp"
+);
+//Establezco el background image the cada página con un maps y un bucle
+@each $page, $url in $jumbotron-urls {
+    .jumbotron-#{$page} {
+        background-image: url($url);
+    }
+}
+.jumbotron-index {
+    @extend .jumbotron;
+}
+
+.jumbotron-contacto {
+    background-position-y: -5rem;
+    background-size: 50rem;
+}
+
+
+.jumbotron-sobre-mi .jumbotron__h1--sobre-mi {
+    @extend .jumbotron__h1--pagina;
+    color: $primary!important;
+}
+
+.jumbotron__titulo--pagina {
+    width: 100%;
+    height: 23rem;
+}
+
+.jumbotron__h1--pagina {
+    @extend .fs-2;
+    color: $blanco;
+    font-weight: 700;
+}
+
+
+/*HERO media queries */
+@media only screen and (min-width: $xsm) {
+    .jumbotron-contacto {
+        background-size: cover;
+        background-position-y: center;
+    }
+}
+@media only screen and (min-width: $sm) {
+    .jumbotron-page {
+        min-height: calc(100vh - 6rem);
+        margin-top: 6rem;
+    }
+    .jumbotron__titulo--pagina {
+        height: calc(100vh - 6rem);
+    }
+}
+@media only screen and (min-width: $md) {
+    .jumbotron__titulo--pagina {
+        text-align: start!important;
+    }
+    .jumbotron__h1--pagina {
+        max-width: 40rem;
+    }
+}

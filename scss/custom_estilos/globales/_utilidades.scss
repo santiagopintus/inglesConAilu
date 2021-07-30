@@ -1,0 +1,137 @@
+/* UTILIDADES */
+.seccion {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.seccion--secundaria {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+/*Background*/
+.bg-primary {
+    background-image: linear-gradient(to right, $negro -60%, $primary 60%, $negro 150%);
+}
+
+/*Botones*/
+.btn {
+    font-weight: 700;
+    color: $blanco;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    background-size: 200%;
+    background-position-x: right;
+    text-align: center;
+    letter-spacing: .15rem;
+    display: block;
+    padding: 1.5rem 0;
+    @extend .fs-6;
+    width: 100%;
+    transition: all 300ms ease !important;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+.btn-primary {
+    background-color: transparent;
+    background-image: linear-gradient(to left, $secondary 50%, $blanco 49%);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    background-image: linear-gradient(to left, $secondary 50%, $primary 49%);
+}
+
+.btn-terciario {
+    background-color: rgba($blanco, .2);
+    box-shadow: inset 0 0 0 4px $blanco;
+    color: $blanco;
+}
+
+.btn:hover {
+    box-shadow: inset 0 0 0 2px $secondary;
+    color: $secondary;
+    background-position-x: left;
+}
+.btn-terciario:hover {
+    background-color: rgba($blanco, .4);
+    box-shadow: inset 0 0 0 2px $blanco;
+    color: $blanco;
+}
+
+//Fuente
+.seccion__titulo {
+    color: $negro;
+    font-weight: 400;
+    margin: 3rem 0 2.5rem 0;
+
+    &--primario {
+        @extend .seccion__titulo;
+        @extend .fs-3;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &--secundario {
+        @extend .seccion__titulo;
+        @extend .fs-5;
+    }
+
+}
+
+//Creo las clases para poder definir sus font-size después
+.fs-1, .fs-2, .fs-3, .fs-4,
+.fs-5, .fs-6, .fs-7, .fs-8 {
+    font-size: 0px;
+}
+
+/*FUENTES MOBILE*/
+
+@each $key, $value in $fs-mobile {
+    .fs-#{$key} {
+        font-size: $value;
+    }
+}
+
+//FUENTES Tablet 
+
+@media only screen and (min-width: $sm) {
+
+    @each $key, $value in $fs-tablet {
+        .fs-#{$key} {
+            font-size: $value;
+        }
+    }
+}
+/*FUENTES Desktop*/
+@media only screen and (min-width: $md) {
+    
+    @each $key, $value in $fs-desktop {
+        .fs-#{$key} {
+            font-size: $value;
+        }
+    }
+}
+
+/* Utilidades (Media Queries) */
+@media only screen and (min-width: $xsm) {
+    .btn {
+        width: fit-content;
+        padding: 1.2rem 2.96rem;
+        margin: 0 1.5rem;
+    }
+}
+
+@media only screen and (min-width: $md) {
+    .btn {
+        margin: 2rem 0 2rem auto;
+    }
+    .seccion__titulo {
+        &--primario {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    }
+}

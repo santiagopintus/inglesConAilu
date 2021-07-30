@@ -1,0 +1,21 @@
+.error-404 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .error-404__img {
+        width: 50%;
+        transition: filter 300ms ease-in-out;
+
+        &:hover {
+            filter: grayscale(1);
+        }
+    }
+
+    .error-404__p {
+        margin-top: 5rem;
+    }
+
+}
