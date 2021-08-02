@@ -7785,15 +7785,26 @@ body::-webkit-scrollbar-track {
   margin: 0 auto; }
 
 .error-404 {
+  margin-top: 8rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .error-404 .error-404__img {
-    width: 50%;
+    width: 100%;
     transition: filter 300ms ease-in-out; }
     .error-404 .error-404__img:hover {
       filter: grayscale(1); }
   .error-404 .error-404__p {
     margin-top: 5rem; }
+
+@media only screen and (min-width: 768px) {
+  .error-404 {
+    margin-top: 8rem;
+    height: 100vh; }
+    .error-404 .error-404__img {
+      width: 45%;
+      transition: filter 300ms ease-in-out; }
+      .error-404 .error-404__img:hover {
+        filter: grayscale(1); } }
