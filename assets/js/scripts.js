@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init();
     toggleIconoHamburguesa();
+    enviandoCorreos();
 })
 
 function toggleIconoHamburguesa() {
@@ -12,4 +13,22 @@ function toggleIconoHamburguesa() {
         hamburguesa.classList.toggle('abierto');
 
     })
+}
+
+function enviandoCorreos() {
+    const formulario = document.querySelector('#formulario');
+    const mailtoButton = document.querySelector('#mailAilu');
+
+    formulario.addEventListener('submit', handleSubmit);
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        const formularioData = new FormData(formulario);
+        
+        fetch('/', {
+            method: 'POST',
+            body: formularioData,
+        })
+        
+    }
 }

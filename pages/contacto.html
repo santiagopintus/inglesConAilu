@@ -106,27 +106,27 @@
         <p data-aos="fade-up" data-aos-duration="1000">Vestibulum eget metus lorem. Fusce sed malesuada enim. Aenean ultrices nisl a nibh lobortis, ut dignissim tortor sodales. Enim. Aenean ultrices nisl a nibh lobortis, ut dignissim tortor sodales.</p>
 
         <!-- Inicio Formulario-->
-        <form data-aos="fade-up" data-aos-duration="1000" class="form bg-primary">
+        <form id="formulario" action="" data-aos="fade-up" data-aos-duration="1000" class="form bg-primary">
             <legend class="form__legend">Completá estos datos para hacerme tu pregunta</legend>
 
             <div class="form__campo">
                 <label for="nombre">Nombre completo*:</label>
-                <input id="nombre" type="text" placeholder="Escribe tu nombre" />
+                <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" />
             </div>
 
             <div class="form__campo">
                 <label for="email">E-mail*:</label>
-                <input type="email" id="email" placeholder="Escribe tu email" />
+                <input name="email" type="email" id="email" placeholder="Escribe tu email" />
             </div>
 
             <div class="form__campo">
                 <label for="telefono">Teléfono*:</label>
-                <input type="tel" id="telefono" placeholder="Escribe tu número de teléfono">
+                <input name="telefono" type="tel" id="telefono" placeholder="Escribe tu número de teléfono">
             </div>
 
             <div class="form__campo">
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje">Hola Ailín, me encantaría saber más sobre tus clases.</textarea>
+                <textarea name="mensaje" id="mensaje">Hola Ailín, me encantaría saber más sobre tus clases.</textarea>
             </div>
             <div class="form__boton">
                 <input type="submit" value="Enviar" class="btn btn-secondary"/>     
@@ -134,6 +134,7 @@
             
         </form>
         <!--Cierre Formulario-->
+        <a id="mailAilu"></a>
 
         <section class="seccion--secundaria metodos-contacto" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="seccion__titulo--primario">Otros métodos de contacto:</h2>
