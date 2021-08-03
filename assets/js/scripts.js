@@ -25,10 +25,6 @@ function enviandoCorreos() {
         e.preventDefault();
         const formularioData = new FormData(formulario);
         
-        fetch('/', {
-            method: 'POST',
-            body: formularioData,
-        })
         
     }
 }
