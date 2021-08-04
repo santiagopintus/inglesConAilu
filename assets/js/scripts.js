@@ -43,6 +43,7 @@ function enviandoCorreos() {
                 'Accept': 'application/json'
             }
         })
+
         mostrarAlerta(response.ok);
 
         function mostrarAlerta(estado) {
@@ -54,9 +55,11 @@ function enviandoCorreos() {
             alerta.classList.add('d-block');
 
             if (estado) {
+                //Si el envío es exitoso
                 parrafoAlerta.classList.add('alerta__parrafo--exito');
                 parrafoAlerta.innerHTML = 'Tu mensaje se envió correctamente';
             } else {
+                //Si el envío da error
                 parrafoAlerta.classList.add('alerta__parrafo--error');
                 parrafoAlerta.innerHTML = 'No se pudo enviar tu mensaje';
             }

@@ -1,3 +1,4 @@
+/* La alerta que se muestra al enviar el mensaje */
 .alerta {
     /* La escondemos para mostrarla con JS */
     display: none;
@@ -5,6 +6,7 @@
     inset: 0;
     background-color: rgba($negro, .7);
 
+    /* La caja blanca que conforma el mensaje */
     .alerta__caja {
         position: relative;
         background-color: $blanco;
@@ -12,6 +14,7 @@
         width: fit-content;
         padding: 3rem;
         
+        // El botón de cerrar la alerta
         .btn-cerrar {
             position: absolute;
             display: block;
@@ -20,7 +23,7 @@
             top: .5rem;
             right: .5rem;
             border-radius: 50%;
-
+            //Cada palito de la cruz
             &::before, &::after {
                 margin: 0 auto;
                 content: '';
@@ -39,42 +42,19 @@
                 background-color: rgba($negro, .2);
             }
         }
+        //El texto de la alerta
         .alerta__parrafo {
             text-align: center;
-
-            &::after {
-                color: $blanco;
-                font-size: 100%;
-                display: inline-block;
-                height: 3rem;
-                width: 3rem;
-                margin-left: 1rem;
-                padding: .4rem;
-                border-radius: 50%;
-            }
         }
 
         .alerta__parrafo--exito {
             @extend .alerta__parrafo;
             color: $success;
-
-            &::after {
-                @extend .alerta__parrafo::after;
-                content: '\2713';
-                background-color: $success;
-            }
-
         }
 
         .alerta__parrafo--error {
             @extend .alerta__parrafo;
             color: $danger;
-
-            &::after {
-                @extend .alerta__parrafo::after;
-                content: '\292B';
-                background-color: $danger;
-            }
         }
 
         .alerta__btn {

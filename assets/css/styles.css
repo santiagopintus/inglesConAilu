@@ -7601,12 +7601,14 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.1); }
 
+/* La alerta que se muestra al enviar el mensaje */
 .alerta {
   /* La escondemos para mostrarla con JS */
   display: none;
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  /* La caja blanca que conforma el mensaje */ }
   .alerta .alerta__caja {
     position: relative;
     background-color: #ffffff;
@@ -7636,25 +7638,10 @@ body::-webkit-scrollbar-track {
         background-color: rgba(0, 0, 0, 0.2); }
     .alerta .alerta__caja .alerta__parrafo, .alerta .alerta__caja .alerta__parrafo--exito, .alerta .alerta__caja .alerta__parrafo--error {
       text-align: center; }
-      .alerta .alerta__caja .alerta__parrafo::after, .alerta .alerta__caja .alerta__parrafo--exito::after, .alerta .alerta__caja .alerta__parrafo--error::after {
-        color: #ffffff;
-        font-size: 100%;
-        display: inline-block;
-        height: 3rem;
-        width: 3rem;
-        margin-left: 1rem;
-        padding: .4rem;
-        border-radius: 50%; }
     .alerta .alerta__caja .alerta__parrafo--exito {
       color: #28a745; }
-      .alerta .alerta__caja .alerta__parrafo--exito::after {
-        content: '\2713';
-        background-color: #28a745; }
     .alerta .alerta__caja .alerta__parrafo--error {
       color: #dc3545; }
-      .alerta .alerta__caja .alerta__parrafo--error::after {
-        content: '\292B';
-        background-color: #dc3545; }
     .alerta .alerta__caja .alerta__btn {
       margin: 2rem auto 0 auto; }
 
