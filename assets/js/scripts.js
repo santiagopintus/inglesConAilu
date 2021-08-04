@@ -24,6 +24,8 @@ function enviandoCorreos() {
     async function handleSubmit(e) {
         e.preventDefault();
         const formularioData = new FormData(formulario);
+
+        //Estas líneas comentadas son del método anterior de envío.
         // var nombreUsuario = formularioData.get('nombre');
         // var mensajeUsuario = formularioData.get('mensaje');
         // var telefonoUsuario = formularioData.get('telefono');
@@ -32,6 +34,7 @@ function enviandoCorreos() {
         // mailtoButton.setAttribute('href', `mailto:santiagopintus@gmail.com?subject=Consulta de ${nombreUsuario}&body=${mensajeUsuario} \nTeléfono: ${telefonoUsuario} \nE-mail: ${emailUsuario}`);
         // mailtoButton.setAttribute('target', '_blank');
         // mailtoButton.click();
+        
         const response = await fetch(this.action, {
             method: this.method,
             body: formularioData,
