@@ -106,17 +106,17 @@
         <p data-aos="fade-up" data-aos-duration="1000">Vestibulum eget metus lorem. Fusce sed malesuada enim. Aenean ultrices nisl a nibh lobortis, ut dignissim tortor sodales. Enim. Aenean ultrices nisl a nibh lobortis, ut dignissim tortor sodales.</p>
 
         <!-- Inicio Formulario-->
-        <form id="formulario" action="" data-aos="fade-up" data-aos-duration="1000" class="form bg-primary">
+        <form id="formulario" action="https://formspree.io/f/mknkqqlb" method="POST" data-aos="fade-up" data-aos-duration="1000" class="form bg-primary">
             <legend class="form__legend">Completá estos datos para hacerme tu pregunta</legend>
 
             <div class="form__campo">
                 <label for="nombre">Nombre completo*:</label>
-                <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" />
+                <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" required/>
             </div>
 
             <div class="form__campo">
-                <label for="email">E-mail*:</label>
-                <input name="email" type="email" id="email" placeholder="Escribe tu email" />
+                <label for="email">E-mail:</label>
+                <input name="email" type="email" id="email" placeholder="Escribe tu email" required/>
             </div>
 
             <div class="form__campo">
@@ -125,8 +125,8 @@
             </div>
 
             <div class="form__campo">
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje">Hola Ailín, me encantaría saber más sobre tus clases.</textarea>
+                <label for="mensaje">Mensaje*:</label>
+                <textarea name="mensaje" id="mensaje" required>Hola Ailín, me encantaría saber más sobre tus clases.</textarea>
             </div>
             <div class="form__boton">
                 <input type="submit" value="Enviar" class="btn btn-secondary"/>     
