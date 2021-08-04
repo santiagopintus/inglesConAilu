@@ -7601,6 +7601,69 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.1); }
 
+.alerta {
+  /* La escondemos para mostrarla con JS */
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .alerta .alerta__caja {
+    position: relative;
+    background-color: #ffffff;
+    margin: 40vh auto 0 auto;
+    width: fit-content;
+    padding: 3rem; }
+    .alerta .alerta__caja .btn-cerrar {
+      position: absolute;
+      display: block;
+      height: 2rem;
+      width: 2rem;
+      top: .5rem;
+      right: .5rem;
+      border-radius: 50%; }
+      .alerta .alerta__caja .btn-cerrar::before, .alerta .alerta__caja .btn-cerrar::after {
+        margin: 0 auto;
+        content: '';
+        display: block;
+        height: 2px;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.7); }
+      .alerta .alerta__caja .btn-cerrar::before {
+        transform: translateY(1rem) rotate(45deg); }
+      .alerta .alerta__caja .btn-cerrar::after {
+        transform: translateY(0.8rem) rotate(-45deg); }
+      .alerta .alerta__caja .btn-cerrar:hover {
+        background-color: rgba(0, 0, 0, 0.2); }
+    .alerta .alerta__caja .alerta__parrafo, .alerta .alerta__caja .alerta__parrafo--exito, .alerta .alerta__caja .alerta__parrafo--error {
+      text-align: center; }
+      .alerta .alerta__caja .alerta__parrafo::after, .alerta .alerta__caja .alerta__parrafo--exito::after, .alerta .alerta__caja .alerta__parrafo--error::after {
+        color: #ffffff;
+        font-size: 100%;
+        display: inline-block;
+        height: 3rem;
+        width: 3rem;
+        margin-left: 1rem;
+        padding: .4rem;
+        border-radius: 50%; }
+    .alerta .alerta__caja .alerta__parrafo--exito {
+      color: #28a745; }
+      .alerta .alerta__caja .alerta__parrafo--exito::after {
+        content: '\2713';
+        background-color: #28a745; }
+    .alerta .alerta__caja .alerta__parrafo--error {
+      color: #dc3545; }
+      .alerta .alerta__caja .alerta__parrafo--error::after {
+        content: '\292B';
+        background-color: #dc3545; }
+    .alerta .alerta__caja .alerta__btn {
+      margin: 2rem auto 0 auto; }
+
+@media only screen and (min-width: 768px) {
+  .alerta .alerta__parrafo::after, .alerta .alerta__caja .alerta__parrafo--exito::after, .alerta .alerta__caja .alerta__parrafo--error::after {
+    font-size: 1.6rem;
+    height: 3rem;
+    width: 3rem; } }
+
 /*Páginas*/
 /* INICIO */
 /*Título*/
@@ -7753,41 +7816,6 @@ body::-webkit-scrollbar-track {
   .metodos-contacto a.metodo-contacto {
     text-decoration: underline; }
 
-.alerta {
-  /* La escondemos para mostrarla con JS */
-  display: none;
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.7); }
-  .alerta .alerta__caja {
-    background-color: #ffffff;
-    margin: 40vh auto 0 auto;
-    width: fit-content;
-    padding: 3rem; }
-  .alerta .alerta__parrafo, .alerta .alerta__parrafo--exito, .alerta .alerta__parrafo--error {
-    text-align: center; }
-    .alerta .alerta__parrafo::after, .alerta .alerta__parrafo--exito::after, .alerta .alerta__parrafo--error::after {
-      color: #ffffff;
-      font-size: 100%;
-      display: inline-block;
-      height: 3rem;
-      width: 3rem;
-      margin-left: 1rem;
-      padding: .4rem;
-      border-radius: 50%; }
-  .alerta .alerta__parrafo--exito {
-    color: #28a745; }
-    .alerta .alerta__parrafo--exito::after {
-      content: '\2713';
-      background-color: #28a745; }
-  .alerta .alerta__parrafo--error {
-    color: #dc3545; }
-    .alerta .alerta__parrafo--error::after {
-      content: '\292B';
-      background-color: #dc3545; }
-  .alerta .alerta__btn {
-    margin: 2rem auto 0 auto; }
-
 @media only screen and (min-width: 768px) {
   .form {
     max-width: 80rem;
@@ -7806,11 +7834,7 @@ body::-webkit-scrollbar-track {
         margin: 1rem;
         margin-right: 0; }
   .metodos-contacto {
-    min-height: 90vh; }
-  .alerta .alerta__parrafo::after, .alerta .alerta__parrafo--exito::after, .alerta .alerta__parrafo--error::after {
-    font-size: 1.6rem;
-    height: 3rem;
-    width: 3rem; } }
+    min-height: 90vh; } }
 
 .seccion__lista {
   margin: 2rem 0; }

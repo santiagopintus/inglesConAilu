@@ -1,0 +1,97 @@
+.alerta {
+    /* La escondemos para mostrarla con JS */
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba($negro, .7);
+
+    .alerta__caja {
+        position: relative;
+        background-color: $blanco;
+        margin: 40vh auto 0 auto;
+        width: fit-content;
+        padding: 3rem;
+        
+        .btn-cerrar {
+            position: absolute;
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            top: .5rem;
+            right: .5rem;
+            border-radius: 50%;
+
+            &::before, &::after {
+                margin: 0 auto;
+                content: '';
+                display: block;
+                height: 2px;
+                width: 80%;
+                background-color: rgba($negro, .7);
+            }
+            &::before {
+                transform: translateY(1rem) rotate(45deg);
+            }
+            &::after {
+                transform: translateY(.8rem) rotate(-45deg);
+            }
+            &:hover {
+                background-color: rgba($negro, .2);
+            }
+        }
+        .alerta__parrafo {
+            text-align: center;
+
+            &::after {
+                color: $blanco;
+                font-size: 100%;
+                display: inline-block;
+                height: 3rem;
+                width: 3rem;
+                margin-left: 1rem;
+                padding: .4rem;
+                border-radius: 50%;
+            }
+        }
+
+        .alerta__parrafo--exito {
+            @extend .alerta__parrafo;
+            color: $success;
+
+            &::after {
+                @extend .alerta__parrafo::after;
+                content: '\2713';
+                background-color: $success;
+            }
+
+        }
+
+        .alerta__parrafo--error {
+            @extend .alerta__parrafo;
+            color: $danger;
+
+            &::after {
+                @extend .alerta__parrafo::after;
+                content: '\292B';
+                background-color: $danger;
+            }
+        }
+
+        .alerta__btn {
+            margin: 2rem auto 0 auto;
+        }
+    }
+}
+
+@media only screen and (min-width: $md) {
+        .alerta {
+            .alerta__parrafo {
+
+                &::after {
+                    font-size: 1.6rem;
+                    height: 3rem;
+                    width: 3rem;
+                }
+            }
+        }
+}

@@ -24,8 +24,6 @@ function enviandoCorreos() {
     async function handleSubmit(e) {
         e.preventDefault();
         const formularioData = new FormData(formulario);
-        const alerta = document.querySelector('#alerta');
-        const parrafoAlerta = document.querySelector('#parrafoAlerta');
 
         /* Estas líneas comentadas son del método anterior de envío. */
         // var nombreUsuario = formularioData.get('nombre');
@@ -48,6 +46,10 @@ function enviandoCorreos() {
         mostrarAlerta(response.ok);
 
         function mostrarAlerta(estado) {
+            const alerta = document.querySelector('#alerta');
+            const parrafoAlerta = document.querySelector('#parrafoAlerta');
+            const btnCerrar = document.querySelector('#btnCerrar');
+
             document.body.style.overflow = 'hidden';
             alerta.classList.add('d-block');
 
@@ -58,6 +60,11 @@ function enviandoCorreos() {
                 parrafoAlerta.classList.add('alerta__parrafo--error');
                 parrafoAlerta.innerHTML = 'No se pudo enviar tu mensaje';
             }
+
+            btnCerrar.addEventListener('click', () => {
+                document.body.style.overflow = 'visible';
+                alerta.classList.remove('d-block');
+            })
         }
 
     }
