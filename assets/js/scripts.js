@@ -56,6 +56,7 @@ function enviandoCorreos() {
 
             if (estado) {
                 //Si el envío es exitoso
+                formulario.reset();
                 parrafoAlerta.classList.add('alerta__parrafo--exito');
                 parrafoAlerta.innerHTML = 'Tu mensaje se envió correctamente';
             } else {
