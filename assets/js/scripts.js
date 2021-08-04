@@ -24,7 +24,14 @@ function enviandoCorreos() {
     function handleSubmit(e) {
         e.preventDefault();
         const formularioData = new FormData(formulario);
+        var nombreUsuario = formularioData.get('nombre');
+        var mensajeUsuario = formularioData.get('mensaje');
+        var telefonoUsuario = formularioData.get('telefono');
+        var emailUsuario = formularioData.get('email');
         
+        mailtoButton.setAttribute('href', `mailto:santiagopintus@gmail.com?subject=Consulta de ${nombreUsuario}&body=${mensajeUsuario} \nTeléfono: ${telefonoUsuario} \nE-mail: ${emailUsuario}`);
+        mailtoButton.setAttribute('target', '_blank');
+        mailtoButton.click();
         
     }
 }
