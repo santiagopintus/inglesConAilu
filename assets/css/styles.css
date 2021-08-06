@@ -207,9 +207,6 @@ button,
 select {
   text-transform: none; }
 
-[role="button"] {
-  cursor: pointer; }
-
 select {
   word-wrap: normal; }
 
@@ -218,12 +215,6 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; }
-
-button:not(:disabled),
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
-  cursor: pointer; }
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -280,8 +271,7 @@ output {
   display: inline-block; }
 
 summary {
-  display: list-item;
-  cursor: pointer; }
+  display: list-item; }
 
 template {
   display: none; }
@@ -4651,7 +4641,6 @@ a.close.disabled {
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
-    cursor: pointer;
     background-color: #fff;
     background-clip: padding-box;
     border-top: 10px solid transparent;
@@ -7250,7 +7239,6 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 1.5rem 0;
   width: 100%;
   transition: all 300ms ease !important;
-  cursor: pointer;
   margin: 2rem 0; }
 
 .btn-primary {
@@ -7425,6 +7413,26 @@ p {
 /* Reescribo el translate del fade-up de la librería Aos */
 [data-aos=fade-up] {
   transform: translate3d(0px, 40px, 0px); }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  cursor: url(../img/cursor.svg), none; }
+
+/* Elmentos donde el mouse cambia a text */
+p, h1, h2, h3, input, textarea, label, legend {
+  cursor: url(../img/cursor_text.svg), none !important; }
+
+/*Elementos donde el mouse cambia a pointer*/
+a, button, a.btn.btn-primary,
+.contenedor-sociales svg, .contenedor-sociales svg path,
+.titulo h1,
+.titulo h2,
+.scroll-icon .scroll-icon__mouse,
+.logo-footer img, .logo,
+a.metodo-contacto p {
+  cursor: url(../img/cursor_hover.svg), none !important; }
 
 /*Layout general*/
 /*NAVEGACION!*/

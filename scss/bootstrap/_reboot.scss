@@ -341,7 +341,7 @@ select {
 //
 // Details at https://github.com/twbs/bootstrap/pull/30562
 [role="button"] {
-  cursor: pointer;
+  //cursor: pointer;
 }
 
 // Remove the inheritance of word-wrap in Safari.
@@ -369,7 +369,7 @@ button,
   [type="reset"],
   [type="submit"] {
     &:not(:disabled) {
-      cursor: pointer;
+      //cursor: pointer;
     }
   }
 }
@@ -470,7 +470,7 @@ output {
 
 summary {
   display: list-item; // Add the correct display in all browsers
-  cursor: pointer;
+  //cursor: pointer;
 }
 
 template {

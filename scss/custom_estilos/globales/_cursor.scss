@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    cursor: url(../img/cursor.svg), none;
+}
+
+/* Elmentos donde el mouse cambia a text */
+p, h1, h2, h3, input, textarea, label, legend {
+    cursor: url(../img/cursor_text.svg), none!important;
+}
+
+/*Elementos donde el mouse cambia a pointer*/
+a, button, a.btn.btn-primary,
+ .contenedor-sociales svg, .contenedor-sociales svg path, 
+ .titulo h1,
+ .titulo h2,
+ .scroll-icon .scroll-icon__mouse,
+ .logo-footer img, .logo,
+ a.metodo-contacto p {
+    cursor: url(../img/cursor_hover.svg), none!important;
+}
+
