@@ -32,5 +32,16 @@ footer {
     /*Cada icono de red social*/
     .icono-social {
         width: 2.6rem;
+
+        .cls-1 {
+            fill: $blanco;
+            transition: fill 300ms ease;
+        }
+
+        &:hover {
+            .cls-1 {
+                fill: $secondary;
+            }
+        }
     }
 }

@@ -7595,6 +7595,11 @@ footer {
   /*Cada icono de red social*/ }
   .contenedor-sociales ul li .icono-social {
     width: 2.6rem; }
+    .contenedor-sociales ul li .icono-social .cls-1 {
+      fill: #ffffff;
+      transition: fill 300ms ease; }
+    .contenedor-sociales ul li .icono-social:hover .cls-1 {
+      fill: #e63946; }
 
 body {
   /* el elemento que envuelve al conjunto */
