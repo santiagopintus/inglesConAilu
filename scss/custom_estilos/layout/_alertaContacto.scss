@@ -2,6 +2,7 @@
 .alerta {
     /* La escondemos para mostrarla con JS */
     display: none;
+    z-index: 50;
     position: fixed;
     inset: 0;
     background-color: rgba($negro, .7);
