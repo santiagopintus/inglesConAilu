@@ -16,6 +16,7 @@
     }
 }
 
+/* Reescribo el translate del fade-up de la librería Aos */
 [data-aos=fade-up] {
     transform: translate3d(0px, 40px, 0px);
 }

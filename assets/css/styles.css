@@ -7319,6 +7319,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fs-8, footer .navbar .navbar-nav__item .navbar-nav__link, footer .navbar .navbar-nav__item .navbar-nav__link--active, footer .copyright {
   font-size: 1.2rem; }
 
+/* FUENTES Tablet */
 @media only screen and (min-width: 576px) {
   .fs-1 {
     font-size: 8vw; }
@@ -7404,6 +7405,11 @@ h1, h2, h3, h4, h5 {
 p {
   line-height: 2; }
 
+/* La seleccion de texto */
+::selection {
+  background-color: rgba(230, 57, 70, 0.9);
+  color: #ffffff; }
+
 /* ANIMACIONES */
 /* Algunas animaciones */
 @keyframes ruedita {
@@ -7416,6 +7422,7 @@ p {
     transform: none;
     opacity: 0; } }
 
+/* Reescribo el translate del fade-up de la librería Aos */
 [data-aos=fade-up] {
   transform: translate3d(0px, 40px, 0px); }
 
@@ -7570,36 +7577,39 @@ header .navbar .container {
     max-width: 40rem; } }
 
 /*FOOTER*/
-footer .logo-footer {
-  max-width: 6.9rem; }
+footer {
+  /*El copyright*/ }
+  footer .copyright {
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff; }
+    footer .copyright a {
+      font-weight: 700;
+      color: var(--secondary); }
+  footer .logo-footer {
+    max-width: 6.9rem; }
 
+/* El contenedor de las redes sociales */
 .contenedor-sociales ul li {
-  list-style: none; }
+  list-style: none;
+  /*Cada icono de red social*/ }
+  .contenedor-sociales ul li .icono-social {
+    width: 2.6rem; }
 
-.contenedor-sociales .icono-social {
-  width: 2.6rem; }
-
-.copyright {
-  font-weight: 300;
-  text-align: center;
-  color: #ffffff; }
-
-.copyright a {
-  font-weight: 700;
-  color: var(--secondary); }
-
-body::-webkit-scrollbar {
-  width: 1rem; }
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem -2px rgba(0, 0, 0, 0.7);
-  background-color: #e63946; }
-  body::-webkit-scrollbar-thumb:hover {
-    box-shadow: 0 0 1rem -1px rgba(0, 0, 0, 0.9); }
-
-body::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.1); }
+body {
+  /* el elemento que envuelve al conjunto */
+  /* la barra en sí misma */
+  /* el carril de la barra  */ }
+  body::-webkit-scrollbar {
+    width: 1rem; }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem -2px rgba(0, 0, 0, 0.7);
+    background-color: #e63946; }
+    body::-webkit-scrollbar-thumb:hover {
+      box-shadow: 0 0 1rem -1px rgba(0, 0, 0, 0.9); }
+  body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 /* La alerta que se muestra al enviar el mensaje */
 .alerta {
@@ -7615,7 +7625,9 @@ body::-webkit-scrollbar-track {
     background-color: #ffffff;
     margin: 40vh auto 0 auto;
     width: fit-content;
-    padding: 3rem; }
+    padding: 3rem;
+    /* El botón de cerrar la alerta*/
+    /*El texto de la alerta*/ }
     .alerta .alerta__caja .btn-cerrar {
       position: absolute;
       display: block;
@@ -7623,7 +7635,8 @@ body::-webkit-scrollbar-track {
       width: 2rem;
       top: .5rem;
       right: .5rem;
-      border-radius: 50%; }
+      border-radius: 50%;
+      /*Cada palito de la cruz*/ }
       .alerta .alerta__caja .btn-cerrar::before, .alerta .alerta__caja .btn-cerrar::after {
         margin: 0 auto;
         content: '';
@@ -7767,7 +7780,7 @@ body::-webkit-scrollbar-track {
       padding: 1rem;
       margin: 1rem 0;
       background-color: #e0e0e0;
-      transition: transform 300ms ease, background-color 300ms ease; }
+      transition: transform 300ms ease, background-color 300ms ease, box-shadow 300ms ease; }
     .form .form__campo input:focus,
     .form .form__campo textarea:focus,
     .form .form__campo input:hover,

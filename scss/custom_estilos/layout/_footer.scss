@@ -9,31 +9,28 @@ footer {
 
         }
     }
+    /*El copyright*/
     .copyright {
         @extend .fs-8;
+        font-weight: 300;
+        text-align: center;
+        color: $blanco;
+
+        a {
+            font-weight: 700;
+            color: var(--secondary);
+        }
     }
     .logo-footer {
         max-width: 6.9rem;
     }
 }
-
-
-
+/* El contenedor de las redes sociales */
 .contenedor-sociales ul li {
     list-style: none;
-}
 
-.contenedor-sociales .icono-social {
-    width: 2.6rem;
-}
-
-.copyright {
-    font-weight: 300;
-    text-align: center;
-    color: $blanco;
-}
-
-.copyright a {
-    font-weight: 700;
-    color: var(--secondary);
+    /*Cada icono de red social*/
+    .icono-social {
+        width: 2.6rem;
+    }
 }

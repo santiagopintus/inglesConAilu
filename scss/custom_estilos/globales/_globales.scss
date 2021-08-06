@@ -32,3 +32,9 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 2;
 }
+
+/* La seleccion de texto */
+::selection {
+    background-color: rgba($secondary, .9);
+    color: $blanco;
+}

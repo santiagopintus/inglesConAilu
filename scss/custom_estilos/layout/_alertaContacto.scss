@@ -15,7 +15,7 @@
         width: fit-content;
         padding: 3rem;
         
-        // El botón de cerrar la alerta
+        /* El botón de cerrar la alerta*/
         .btn-cerrar {
             position: absolute;
             display: block;
@@ -24,7 +24,7 @@
             top: .5rem;
             right: .5rem;
             border-radius: 50%;
-            //Cada palito de la cruz
+            /*Cada palito de la cruz*/
             &::before, &::after {
                 margin: 0 auto;
                 content: '';
@@ -43,7 +43,7 @@
                 background-color: rgba($negro, .2);
             }
         }
-        //El texto de la alerta
+        /*El texto de la alerta*/
         .alerta__parrafo {
             text-align: center;
         }

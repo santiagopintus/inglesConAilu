@@ -18,7 +18,8 @@
             margin: 1rem 0;
             background-color: #e0e0e0;
             transition: transform 300ms ease,
-                background-color 300ms ease;
+                background-color 300ms ease,
+                box-shadow 300ms ease;
         }
 
         input:focus,
