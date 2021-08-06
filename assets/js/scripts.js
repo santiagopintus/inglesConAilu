@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init();
     toggleIconoHamburguesa();
-    enviandoCorreos();
+
+    /* Comprueba que está en la página de contacto para llamar la funcion */
+    if (document.querySelector('#tituloPagina').innerHTML.includes('Contacto')) {
+        enviandoCorreos();
+    }
 })
 
 function toggleIconoHamburguesa() {
@@ -16,6 +20,7 @@ function toggleIconoHamburguesa() {
 }
 
 function enviandoCorreos() {
+
     const formulario = document.querySelector('#formulario');
     // const mailtoButton = document.querySelector('#mailAilu');
 
