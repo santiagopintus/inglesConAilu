@@ -7587,7 +7587,7 @@ footer {
       font-weight: 700;
       color: var(--secondary); }
   footer .logo-footer {
-    max-width: 6.9rem; }
+    margin: 1rem 0; }
 
 /* El contenedor de las redes sociales */
 .contenedor-sociales ul li {
