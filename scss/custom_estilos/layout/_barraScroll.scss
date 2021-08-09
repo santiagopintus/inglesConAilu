@@ -2,6 +2,7 @@ body {
     /* el elemento que envuelve al conjunto */
     &::-webkit-scrollbar {
         width: 1rem;
+        cursor: url(../img/cursor.svg), none;
     }
     /* la barra en sí misma */
     &::-webkit-scrollbar-thumb {

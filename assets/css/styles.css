@@ -7264,6 +7264,15 @@ a.text-dark:hover, a.text-dark:focus {
   box-shadow: inset 0 0 0 2px #ffffff;
   color: #ffffff; }
 
+.btn.btn-inline {
+  display: inline-block;
+  padding: .5rem .6rem;
+  width: fit-content;
+  margin: 0;
+  background-color: #e63946; }
+  .btn.btn-inline:hover {
+    color: #ffffff; }
+
 .seccion__titulo, .seccion__titulo--primario, .contenido-inicio__titulo--primario, .seccion__titulo--secundario, .contenido-inicio__titulo--secundario {
   color: #000000;
   font-weight: 400;
@@ -7428,7 +7437,7 @@ a, button, a.btn.btn-primary, .btn.btn-secondary,
 .contenedor-sociales svg, .contenedor-sociales svg path,
 .titulo h1, .titulo h2, .scroll-icon .scroll-icon__mouse,
 .logo-footer img, .logo, a.metodo-contacto p {
-  cursor: url(../img/cursor_hover.svg), none !important; }
+  cursor: url(../img/cursor_hover.svg), pointer !important; }
 
 /*Layout general*/
 /*NAVEGACION!*/
@@ -7610,7 +7619,8 @@ body {
   /* la barra en sí misma */
   /* el carril de la barra  */ }
   body::-webkit-scrollbar {
-    width: 1rem; }
+    width: 1rem;
+    cursor: url(../img/cursor.svg), none; }
   body::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     box-shadow: 0 0 1rem -2px rgba(0, 0, 0, 0.7);
