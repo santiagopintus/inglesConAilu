@@ -7844,6 +7844,7 @@ body {
 /*Carousel*/
 .carousel-item .image-container {
   height: 80vh;
+  min-height: 38rem;
   width: 100%;
   background-size: cover;
   filter: brightness(0.7); }
