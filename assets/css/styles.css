@@ -7826,12 +7826,8 @@ body {
 
 /* Métodos de contacto */
 .metodos-contacto {
-  min-height: 74vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+  min-height: 74vh; }
   .metodos-contacto .metodo-contacto {
-    display: flex;
     width: fit-content;
     gap: 2rem;
     margin-bottom: 3rem; }
@@ -7873,11 +7869,7 @@ body {
 
 .error-404 {
   margin-top: 8rem;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  height: 100vh; }
   .error-404 .error-404__img {
     width: 100%;
     transition: filter 300ms ease-in-out; }
