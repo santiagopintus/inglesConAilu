@@ -117,7 +117,7 @@ header .navbar .container {
 }
 
 
-@media only screen and (min-width: $sm) {
+@include tablet {
     .contenedor-header {
         margin-top: 3vw;
     }
@@ -127,7 +127,7 @@ header .navbar .container {
     }
 }
 
-@media only screen and (min-width: $md) {
+@include desktop {
     .navbar {
         .navbar-nav__item{
             width: fit-content;

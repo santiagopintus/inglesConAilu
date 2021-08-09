@@ -71,7 +71,7 @@
     }
 }
 
-@media only screen and (min-width: $md) {
+@include desktop {
     .form {
         max-width: 80rem;
         padding: 5rem;

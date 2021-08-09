@@ -64,7 +64,7 @@
     }
 }
 
-@media only screen and (min-width: $md) {
+@include desktop {
         .alerta {
             .alerta__parrafo {
 

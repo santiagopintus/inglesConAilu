@@ -57,13 +57,13 @@ $jumbotron-urls: (
 
 
 /*HERO media queries */
-@media only screen and (min-width: $xsm) {
+@include telefono {
     .jumbotron-contacto {
         background-size: cover;
         background-position-y: center;
     }
 }
-@media only screen and (min-width: $sm) {
+@include tablet {
     .jumbotron-page {
         min-height: calc(100vh - 6rem);
         margin-top: 6rem;
@@ -72,7 +72,7 @@ $jumbotron-urls: (
         height: calc(100vh - 6rem);
     }
 }
-@media only screen and (min-width: $md) {
+@include desktop {
     .jumbotron__titulo--pagina {
         text-align: start!important;
     }

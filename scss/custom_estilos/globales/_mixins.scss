@@ -1,0 +1,26 @@
+@mixin telefono { //Dispositivos entre 480px y 575px
+    @media only screen and (min-width: $xsm) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    //Dispositivos entre 575px y 767px
+    @media only screen and (min-width: $sm) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    //Dispositivos entre 768px y 991px
+    @media only screen and (min-width: $md) {
+        @content;
+    }
+}
+
+@mixin grande {
+    //Dispositivos entre 992px y 1024px
+    @media only screen and (min-width: $lg) {
+        @content;
+    }
+}

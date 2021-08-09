@@ -106,7 +106,7 @@
 
 /* FUENTES Tablet */
 
-@media only screen and (min-width: $sm) {
+@include tablet {
 
     @each $key, $value in $fs-tablet {
         .fs-#{$key} {
@@ -115,7 +115,7 @@
     }
 }
 /*FUENTES Desktop*/
-@media only screen and (min-width: $md) {
+@include desktop {
     
     @each $key, $value in $fs-desktop {
         .fs-#{$key} {
@@ -125,7 +125,7 @@
 }
 
 /* Utilidades (Media Queries) */
-@media only screen and (min-width: $xsm) {
+@include telefono {
     .btn {
         width: fit-content;
         padding: 1.2rem 2.96rem;
@@ -133,7 +133,7 @@
     }
 }
 
-@media only screen and (min-width: $md) {
+@include telefono {
     .btn {
         margin: 2rem 0 2rem auto;
     }

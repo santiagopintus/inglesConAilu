@@ -70,13 +70,14 @@
 }
 
 /*Titulo mq */
-@media only screen and (min-width: $sm) {
+@include tablet {
     .titulo {
         margin-bottom: 10rem;
     }
 }
 
-@media only screen and (min-width: 992px) {
+//Para dispositivos mayores a 992px
+@include grande {
     .scroll-icon {
         display: block;
     }

@@ -17,7 +17,7 @@
 
 }
 
-@media only screen and (min-width: $md) {
+@include desktop {
     .error-404 {
     margin-top: 8rem;
     height: 100vh;

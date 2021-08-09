@@ -33,14 +33,14 @@ $material-bg-url: (
     padding: .8rem 1.2rem;
 }
 
-@media only screen and (min-width: $sm) {
+@include tablet {
     .carousel-caption .btn-terciario {
         width: 100%;
         padding: .8rem 1.2rem;
     }
 }
 
-@media only screen and (min-width: $md) {
+@include desktop {
     .carousel-caption .btn-terciario {
         width: fit-content;
         margin: 0 0 0 auto;
