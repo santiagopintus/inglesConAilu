@@ -1,7 +1,7 @@
 {
-  "name": "con-sass",
+  "name": "ingles-con-ailu",
   "version": "1.0.0",
-  "description": "Using SASS in the Ingles con Ailu site.",
+  "description": "El sitio web de Ingles con Ailu. Creado con SASS y Bootstrap.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
