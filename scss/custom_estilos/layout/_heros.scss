@@ -6,7 +6,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 0;
 }
 
 .jumbotron-page {
@@ -14,6 +13,7 @@
     max-height: 29rem;
     min-height: 0;
     margin-top: 6rem;
+    padding: 0;
 }
 
 $jumbotron-urls: (

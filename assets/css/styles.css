@@ -7533,13 +7533,13 @@ header .navbar .container {
   border-radius: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  padding: 0; }
+  background-position: center; }
 
 .jumbotron-page {
   max-height: 29rem;
   min-height: 0;
-  margin-top: 6rem; }
+  margin-top: 6rem;
+  padding: 0; }
 
 .jumbotron-index {
   background-image: url("../img/optimized/inicio_overlay.webp"); }
