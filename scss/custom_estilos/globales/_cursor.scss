@@ -1,12 +1,11 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
     cursor: url(../img/cursor.svg), none;
 }
 
 /* Elmentos donde el mouse cambia a text */
-p, h1, h2, h3, input, textarea, label, legend {
+p, h1, h2, h3, input, textarea, label, legend, ul li {
     cursor: url(../img/cursor_text.svg), none!important;
 }
 
