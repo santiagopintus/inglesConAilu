@@ -53,9 +53,7 @@
 
 /* Métodos de contacto */
 .metodos-contacto {
-
-    min-height: 74vh;
-
+    height: 60vh;
     .metodo-contacto {
         width: fit-content;
         gap: 2rem;
@@ -96,9 +94,6 @@
         }
 
 
-    }
-    .metodos-contacto {
-        min-height: 90vh;
     }
 
 }

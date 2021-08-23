@@ -104,11 +104,9 @@
     <!-- Inicio Contenido -->
     <main class="container mt-5">
 
-        <p data-aos="fade-up" data-aos-duration="1000">Aquí puedes encontrar el formulario de contacto. Llena tus datos y deja tu mensaje para ponerte en contacto conmigo. Revisa tus datos antes de enviar tu mensaje. De haber un error en el email, no podré contactarme contigo.</p>
-
         <!-- Inicio Formulario-->
         <form id="formulario" action="https://formspree.io/f/mknkqqlb" method="POST" data-aos="fade-up" data-aos-duration="1000" class="form bg-primary">
-            <legend class="form__legend">Completa estos datos para hacerme tu pregunta</legend>
+            <legend class="form__legend">Completa estos datos para poder contactarte</legend>
 
             <div class="form__campo">
                 <label for="nombre">Nombre completo*:</label>
@@ -127,7 +125,7 @@
 
             <div class="form__campo">
                 <label for="mensaje">Mensaje*:</label>
-                <textarea name="mensaje" id="mensaje" required>Hola Ailín, me encantaría saber más sobre tus clases.</textarea>
+                <textarea name="mensaje" id="mensaje">Hola Ailín, me encantaría saber más sobre tus clases.</textarea>
             </div>
             <div class="form__boton">
                 <input type="submit" value="Enviar" class="btn-secondary"/>     
@@ -146,31 +144,37 @@
         </div>
 
         <!-- Otros Métodos de Contacto -->
-        <section class="seccion--secundaria metodos-contacto d-flex flex-column justify-content-around" data-aos="fade-up" data-aos-duration="1000">
-            <h2 class="seccion__titulo--primario">Otros métodos de contacto:</h2>
+        <section class="seccion--secundaria contenedor-metodos-contacto row" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="seccion__titulo--primario col-12 text-center">Otros métodos de contacto:</h2>
 
-            <!-- Metodo de contacto -->
-            <div>
-                <a class="metodo-contacto d-flex" target="_blank" href="https://www.instagram.com/inglesconailu/">
-                    <img width="28" height="40" src="../assets/img/instagram_oscuro.svg" alt="Icono de instagram">
-                    <p>@inglesconailu</p>
-                </a>
+            <div class="metodos-contacto d-flex flex-column justify-content-around col-md-12 col-lg-6">
+                <!-- Metodo de contacto -->
+                <div>
+                    <a class="metodo-contacto d-flex" target="_blank" href="https://www.instagram.com/inglesconailu/">
+                        <img width="28" height="40" src="../assets/img/instagram_oscuro.svg" alt="Icono de instagram">
+                        <p>@inglesconailu</p>
+                    </a>
+                </div>
+
+                <!-- Metodo de contacto 2-->
+                <div>
+                    <a class="metodo-contacto d-flex" target="_blank" href="https://wa.me/+542215012649">
+                        <img width="28" height="40" src="../assets/img/whatsapp_oscuro.svg" alt="Icono de whatsapp">
+                        <p>+54 9 221 501-2649</p>
+                    </a>
+                </div>
+
+                <!-- Metodo de contacto 4-->
+                <div class="metodo-contacto d-flex">
+                    <img width="28" height="40" src="../assets/img/telefono_oscuro.svg" alt="Icono de teléfono">
+                    <p>0221 501-2649</p>
+                </div>
             </div>
 
-            <!-- Metodo de contacto 2-->
-            <div>
-                <a class="metodo-contacto d-flex" target="_blank" href="https://wa.me/+542215012649">
-                    <img width="28" height="40" src="../assets/img/whatsapp_oscuro.svg" alt="Icono de whatsapp">
-                    <p>+54 9 221 501-2649</p>
-                </a>
+            <div class="img-metodos-contacto col-md-12 col-lg-6">
+                <img src="../assets/img/optimized/metodos-contacto.webp
+                " alt="Una imagen sobre la satisfacción al final de un camino difícil.">
             </div>
-
-            <!-- Metodo de contacto 4-->
-            <div class="metodo-contacto d-flex">
-                <img width="28" height="40" src="../assets/img/telefono_oscuro.svg" alt="Icono de teléfono">
-                <p>0221 501-2649</p>
-            </div>
-
         </section>
     </main>
     <!-- Cierre Contenido -->

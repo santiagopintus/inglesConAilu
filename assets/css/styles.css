@@ -7919,7 +7919,7 @@ body {
 
 /* Métodos de contacto */
 .metodos-contacto {
-  min-height: 74vh; }
+  height: 60vh; }
   .metodos-contacto .metodo-contacto {
     width: fit-content;
     gap: 2rem;
@@ -7945,9 +7945,7 @@ body {
         border: none;
         padding: 1rem;
         margin: 1rem;
-        margin-right: 0; }
-  .metodos-contacto {
-    min-height: 90vh; } }
+        margin-right: 0; } }
 
 .seccion__lista {
   margin: 2rem 0; }
