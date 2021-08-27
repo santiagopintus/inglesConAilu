@@ -7684,6 +7684,7 @@ header .navbar .container {
 
 /*FOOTER*/
 footer {
+  margin-top: 12.5rem;
   /*El copyright*/ }
   footer .copyright {
     font-weight: 300;
@@ -7919,7 +7920,7 @@ body {
 
 /* Métodos de contacto */
 .metodos-contacto {
-  height: 60vh; }
+  margin: 3rem 0; }
   .metodos-contacto .metodo-contacto {
     width: fit-content;
     gap: 2rem;
