@@ -7927,6 +7927,9 @@ body {
     margin-bottom: 3rem; }
     .metodos-contacto .metodo-contacto p {
       margin: 0; }
+    .metodos-contacto .metodo-contacto img {
+      width: 2.8rem;
+      height: 4rem; }
   .metodos-contacto a.metodo-contacto {
     text-decoration: underline; }
 
